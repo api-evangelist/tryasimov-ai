@@ -1,0 +1,18 @@
+generated: '2026-10-24'
+method: probed
+source: https://tryasimov.ai/privacy
+
+signals:
+  data_subject_request:
+    - evidence:
+        source: https://tryasimov.ai/privacy
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "Asimov Capture is used by approved adult collectors to record assigned first-person robotics training data. This policy explains what information the app and related services collect, how Asimov may use it, and how collectors can request deletion or consent withdrawal."
+        note: Allows collectors to request deletion of their data and withdraw consent.
+    - evidence:
+        source: https://tryasimov.ai/privacy
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "Name or display name, email address, phone number if provided, account status, role, login records, consent status, and account deletion requests."
+        note: Explicit mention of account deletion requests.

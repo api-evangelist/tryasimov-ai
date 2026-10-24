@@ -1,25 +1,71 @@
 aid: tryasimov-ai
+
 name: Asimov
-description: 'Asimov is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by y-combinator) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Asimov builds large‑scale human activity datasets to train next‑generation robots. By collecting real‑world egocentric video, 3‑D pose, depth and annotations across kitchens, offices, hotels and warehouses on three continents, they provide clean, annotated data that bridges the robotics data gap. Backed by Y Combinator, Asimov enables robotics teams to accelerate perception and manipulation models with diverse, organic human motion data.'
+
 url: https://raw.githubusercontent.com/api-evangelist/tryasimov-ai/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-24'
+
 modified: '2026-10-24'
+
 tags:
 - Company
-apis: []
+- Robotics
+- Data
+- AI
+- Human-Intelligence
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- y-combinator
+
 common:
+- type: Hosts
+  url: hosts/tryasimov-ai-hosts.yml
+- type: Vendors
+  url: vendors/tryasimov-ai-vendors.yml
+- type: DomainSecurity
+  url: security/tryasimov-ai-domain-security.yml
 - type: Website
   url: https://tryasimov.ai/
+- type: Documentation
+  url: https://tryasimov.ai/
+- type: PrivacyPolicy
+  url: https://tryasimov.ai/privacy
+- type: TermsOfService
+  url: https://tryasimov.ai/terms
+- type: Support
+  url: https://tryasimov.ai/support
+
+apis: []
+
+x-backed-by:
+- y-combinator
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: The provider's website is a JavaScript‑rendered single‑page app with no machine‑readable API spec discovered.
+  evidence:
+    - url: https://tryasimov.ai/
+      status: 200
+  checked: '2026-10-24'
+x-enrichment:
+  date: '2026-10-24'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
